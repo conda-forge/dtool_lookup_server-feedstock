@@ -31,10 +31,11 @@ requirements:
     - flask-migrate
     - flask-pymongo
     - flask-sqlalchemy
+    - flask-smorest
+    - flask-marshmallow
     - pymongo
     - python >=3.6
     - pyyaml
-    - flask-smorest
 
 test:
   imports:
