@@ -1,5 +1,5 @@
 {% set name = "dtool_lookup_server" %}
-{% set version = "0.17.2" %}
+{% set version = "0.18.0" %}
 
 
 package:
@@ -8,10 +8,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/dtool-lookup-server/dtool-lookup-server-{{ version }}.tar.gz
-  sha256: f56489c5a03378adeb67294fe4d19321ac416d8aa1f2d4112a6d00489d3155bc
+  sha256: 1aca3bf5644f41f25531ee52d109ab829a067421c5c01f3b5a64a69056179edf
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -25,15 +25,18 @@ requirements:
     - dtool_irods
     - dtool_s3
     - dtoolcore >=3.18.0
-    - flask <2.0
+    - flask
     - flask-cors
     - flask-jwt-extended >=4.0
     - flask-migrate
     - flask-pymongo
     - flask-sqlalchemy
+    - flask-smorest
+    - flask-marshmallow
     - pymongo
     - python >=3.6
     - pyyaml
+    - marshmallow-sqlalchemy
 
 test:
   imports:
