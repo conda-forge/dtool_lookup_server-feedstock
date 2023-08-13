@@ -25,7 +25,7 @@ requirements:
     - dtool_irods
     - dtool_s3
     - dtoolcore >=3.18.0
-    - flask <2.0
+    - flask
     - flask-cors
     - flask-jwt-extended >=4.0
     - flask-migrate
