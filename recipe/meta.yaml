@@ -36,6 +36,7 @@ requirements:
     - pymongo
     - python >=3.6
     - pyyaml
+    - marshmallow-sqlalchemy
 
 test:
   imports:
