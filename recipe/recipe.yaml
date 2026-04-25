@@ -40,6 +40,7 @@ requirements:
     - python >=${{ python_min }}
     - pyyaml
     - marshmallow-sqlalchemy
+    - setuptools <81
 
 tests:
   - python:
